@@ -10,13 +10,13 @@ public class SpawnManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        InvokeRepeating("SpawnObstacle", startDelay, repeatRate);
     }
 
     // Update is called once per frame
     void Update()
     {
-        InvokeRepeating("SpawnObstacle", startDelay, repeatRate);
+      
     } 
 
     void SpawnObstacle()
